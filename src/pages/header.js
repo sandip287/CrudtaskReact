@@ -6,12 +6,12 @@ export default class Header extends Component {
       <nav className="navbar navbar-inverse">
         <div className="container-fluid">
           <div className="navbar-header">
-            <a className="navbar-brand" href="#">
+            {/* <a className="navbar-brand" href="#">
               React Crud operation
-            </a>
+            </a> */}
           </div>
           <ul className="nav navbar-nav">
-            <li className="active">
+            {/* <li className="active">
               <a href="#">Home</a>
             </li>
             <li>
@@ -19,7 +19,7 @@ export default class Header extends Component {
             </li>
             <li>
               <a href="#">Add Student</a>
-            </li>
+            </li> */}
           </ul>
           <button className="btn btn-danger navbar-btn">Button</button>
         </div>

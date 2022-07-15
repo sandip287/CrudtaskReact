@@ -1,8 +1,12 @@
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import { useState } from "react";
+//import ChatBotWrapper from "./chatBotWrapper";
 import "./App.css";
-import { List, List1 } from "./pages/list";
+//import { List, List1 } from "./pages/list";
 import Header from "./pages/header";
+import { MasterList } from "./pages/masterList";
+//import EmplyeeCrud from "./pages/emplyeeCrud";
+//import ChatBot from "react-simple-chatbot";
 
 const list = [
   {
@@ -30,36 +34,9 @@ function App() {
         <Header />
       </div>
 
-      <div className="container">
-        <input
-          className="form-control"
-          name="search"
-          onChange={(e) => {
-            setSearch(e.target.value);
-            //console.log(setSearch(e.target.value));
-          }}
-        />
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            {list
-              .filter((row) => (search ? row.name == search : row))
-              .map((row) => (
-                <tr>
-                  <td>{row.name}</td>
-                  <td>{row.lastName}</td>
-                  <td>{row.email}</td>
-                </tr>
-              ))}
-          </tbody>
-        </table>
-      </div>
+      <MasterList />
+
+      {/* <EmplyeeCrud /> */}
     </div>
   );
 }
